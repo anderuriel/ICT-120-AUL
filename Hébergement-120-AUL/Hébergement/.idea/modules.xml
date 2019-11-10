@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Hosting.iml" filepath="$PROJECT_DIR$/.idea/Hosting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/startbootstrap-bare-gh-pages.iml" filepath="$PROJECT_DIR$/.idea/startbootstrap-bare-gh-pages.iml" />
     </modules>
   </component>
 </project>
