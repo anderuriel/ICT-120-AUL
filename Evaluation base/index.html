@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Inscription</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
-<body>
-    <h2>Inscription au tchoukball club Ste-Croix</h2>
-    <form action="motivation.html" method = get>
-        <label>Prénom</label><input type="text" name="txtFirstName"><div>Invalide: trop court</div>
-        <label>Nom</label><input type="text" name="txtLastName"><div>Invalide: trop court</div>
-        <label>Mot de passe</label><input type="password"><div>Invalide: minimum 6 caractères</div>
-        <label>Confirmation</label><input type="password"><div>Invalide: différent</div>
-        <input type="submit" value="Envoyer">
-    </form>
-</body>
-</html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inscription</title>
+        <script src="JS120AUL.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col align-self-center">
+                <h2>Inscription au tchoukball club Ste-Croix</h2>
+                <form action="motivation.html" method = get>
+                    <label>Prénom</label><input type="text" name="txtFirstName" id="firstnameget" minlength="3" required><div>Invalide: trop court</div>
+
+                    <label>Nom</label><input type="text" name="txtLastName" id="lastnameget" minlength="3" required><div>Invalide: trop court</div>
+
+                    <label>Mot de passe</label><input type="password" id="pswrd" minlength="6" required><div>Invalide: minimum 6 caractères</div>
+
+                    <label>Confirmation</label><input type="password" id="pswrdconfirm" minlength="6" required><div>Invalide: différent</div>
+
+                    <input class ="btn btn-primary" type="submit" value="Envoyer" onclick="getnames()">
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>
